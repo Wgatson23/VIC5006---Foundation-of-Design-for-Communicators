@@ -330,11 +330,13 @@ p {
 	float: left;
 }
 footer .footer_column h3 {
-	color: #b3b3b3;
+	font-size: 30px;
+	color: #a4312e;
 	text-align: center;
 }
 footer .footer_column p {
-	color: #717070;
+	color: black;
+	font-weight: bolder;
 	background-color: #ffffff;
 }
 .cards {
