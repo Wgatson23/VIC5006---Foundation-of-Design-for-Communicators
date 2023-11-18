@@ -29,7 +29,7 @@
             <nav>
                 <ul>
                     <li><a href="#hero">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#about">SUBSCRIBE</a></li>
                     <li> <a href="./Pages/contact.html">CONTACT</a></li>
                 </ul>
             </nav>
@@ -135,9 +135,39 @@ var x = setInterval(function() {
         </footer>
         <!-- Footer Section -->
         <section class="footer_banner" id="contact">
-            <h2 class="hidden">Footer Banner Section </h2>
-            <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
-            <div class="button">subscribe</div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<div class="footersection">
+  <a class="button popup-button" href="#">FOR THE LATEST NEWS &amp; UPDATES</a>
+</div>
+
+<div class="wrapper">
+    <div class="popup-box">
+      <h2>SIGN UP</h2>
+      <p>Subscribe to our newsletters now and stay up-to-date with daily newsletters.</p>
+      <a class="close-button popup-close" href="#">x</a><div class="form-group">
+      <form method="post">
+        <input type="email" name="useremail-id" required placeholder="Please Enter your email">
+        <button type="submit" id="subscribe">SUBSCRIBE</button>
+        <script>$(document).ready(function() {
+  $('.popup-button').click(function(e) {
+    $('.wrapper').fadeIn(500);
+    $('.popup-box').removeClass('transform-out').addClass('transform-in');
+
+    e.preventDefault();
+  });
+
+  $('.popup-close').click(function(e) {
+    $('.wrapper').fadeOut(500);
+    $('.popup-box').removeClass('transform-in').addClass('transform-out');
+
+    e.preventDefault();
+  });
+});</script>
+      </form>
+    </div>
+    </div>
+  </div>
+  
         </section>
         <!-- Copyrights Section -->
         <div class="copyright">&copy;2023- <strong>Civil and Human Rights</strong></div>
