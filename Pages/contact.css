@@ -99,7 +99,7 @@ section {
 }
 
 .single-input-fieldsbtn input[type="submit"] {
-    background: #fda40b none repeat scroll 0 0;
+    background: #a4312e; none repeat scroll 0 0;
     color: #fff;
     display: inline-block;
     font-weight: 600;
