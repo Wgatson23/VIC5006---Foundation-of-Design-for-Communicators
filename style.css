@@ -326,7 +326,7 @@ p {
 .footer_column {
 	width: 50%;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 20px;
 	float: left;
 }
 footer .footer_column h3 {
@@ -400,6 +400,7 @@ footer .footer_column p {
 }
 footer {
 	display: inline-block;
+margin-top: 10px;
 }
 .hidden {
 	display: none;

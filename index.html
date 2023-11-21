@@ -29,6 +29,7 @@
             <nav>
                 <ul>
                     <li><a href="#hero">HOME</a></li>
+                    <li><a href="./Pages/subscribe.html">STORIES</a></li>
                     <li> <a href="./Pages/contact.html">CONTACT</a></li>
                 </ul>
             </nav>
@@ -43,36 +44,36 @@
             <p class="tagline">Civil and Human Right Expo</p>
             <p id="demo"></p>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Dec 5, 2023 15:37:25").getTime();
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Dec 5, 2023 15:37:25").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+                // Update the count down every 1 second
+                var x = setInterval(function () {
 
-  // Get today's date and time
-  var now = new Date().getTime();
+                    // Get today's date and time
+                    var now = new Date().getTime();
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+                    // Find the distance between now and the count down date
+                    var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+                    // Display the result in the element with id="demo"
+                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                        + minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+                    // If the count down is finished, write some text
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+            </script>
             <p class="text_column">There are many exhibits in a museum dedicated to our history. The purpose of a
                 history museum is to provide facts and prevent us from making previous mistakes. I want you to feel
                 inspired and knowledgeable about civil and human rights at the departure. </p>
@@ -81,7 +82,9 @@ var x = setInterval(function() {
                 have them challenge themselves to learn and possibly become an advocate for civil and human rights. </p>
             <p class="text_column">This guide will focus on the civil rights that various groups have fought for within
                 the United States. While some of these rights, like the right to education, certainly overlap with human
-                rights, we treat them as civil rights in most academic conversations.</p>
+                rights, we treat them as civil rights in most academic conversations.
+                Click <a href="https://www.history.com/topics/black-history/civil-rights-movement-timeline"> here </a>to
+                view the timeline of Civil and Huamn Rights from the History Channel </p>
         </section>
 
         <div class="gallery">
@@ -125,48 +128,49 @@ var x = setInterval(function() {
                 <h3>LOCATION</h3>
                 <img src="./assets/004950b9-4e1b-47ba-a8b2-3028a270b94c.avif" alt="" width="400" height="200"
                     class="cards" />
-                    <div class="flocation">
-                <p> December 08, 2023 </p>
-                <p> 5 pm</p>
-                <p> Jacksonville, Florida. Prime Osborne Convention Center</p>
-            </div>
+                <div class="flocation">
+                    <p> December 08, 2023 </p>
+                    <p> 5 pm</p>
+                    <p> Jacksonville, Florida. Prime Osborne Convention Center</p>
+                </div>
             </article>
         </footer>
         <!-- Footer Section -->
         <section class="footer_banner" id="contact">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<div class="footersection">
-  <a class="button popup-button" href="#">SUBSCRIBE FOR UPDATES</a>
-</div>
+            <div class="footersection">
+                <a class="button popup-button" href="#">SUBSCRIBE FOR UPDATES</a>
+            </div>
 
-<div class="wrapper">
-    <div class="popup-box">
-      <h2>SIGN UP</h2>
-      <p>Subscribe to our newsletters now and stay up-to-date with daily newsletters.</p>
-      <a class="close-button popup-close" href="#">x</a><div class="form-group">
-      <form method="post">
-        <input type="email" name="useremail-id" required placeholder="Please Enter your email">
-        <button type="submit" id="subscribe">SUBSCRIBE</button>
-        <script>$(document).ready(function() {
-  $('.popup-button').click(function(e) {
-    $('.wrapper').fadeIn(500);
-    $('.popup-box').removeClass('transform-out').addClass('transform-in');
+            <div class="wrapper">
+                <div class="popup-box">
+                    <h2>SIGN UP</h2>
+                    <p>Subscribe to our newsletters now and stay up-to-date with daily newsletters.</p>
+                    <a class="close-button popup-close" href="#">x</a>
+                    <div class="form-group">
+                        <form method="post">
+                            <input type="email" name="useremail-id" required placeholder="Please Enter your email">
+                            <button type="submit" id="subscribe">SUBSCRIBE</button>
+                            <script>$(document).ready(function () {
+                                    $('.popup-button').click(function (e) {
+                                        $('.wrapper').fadeIn(500);
+                                        $('.popup-box').removeClass('transform-out').addClass('transform-in');
 
-    e.preventDefault();
-  });
+                                        e.preventDefault();
+                                    });
 
-  $('.popup-close').click(function(e) {
-    $('.wrapper').fadeOut(500);
-    $('.popup-box').removeClass('transform-in').addClass('transform-out');
+                                    $('.popup-close').click(function (e) {
+                                        $('.wrapper').fadeOut(500);
+                                        $('.popup-box').removeClass('transform-in').addClass('transform-out');
 
-    e.preventDefault();
-  });
-});</script>
-      </form>
-    </div>
-    </div>
-  </div>
-  
+                                        e.preventDefault();
+                                    });
+                                });</script>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <!-- Copyrights Section -->
         <div class="copyright">&copy;2023- <strong>Civil and Human Rights</strong></div>
