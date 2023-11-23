@@ -173,6 +173,7 @@ ul li:hover a {
 	background-repeat: no-repeat;
 }
 .parallax {
+	font-size: 14px;
 	color: #ffffff;
 	text-align: right;
 	padding-right: 100px;
